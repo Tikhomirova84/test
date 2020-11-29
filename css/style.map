@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.scss",
+		"../sass/base/_variables.scss"
+	],
+	"sourcesContent": [
+		"@import 'base/variables';\r\n\r\n* {\r\n    font-family: 'Museo Sans Cyrl', sans serif;\r\n}\r\n\r\n.container {\r\n    max-width: 950px;\r\n    margin   : 0 auto;\r\n}",
+		""
+	],
+	"names": [],
+	"mappings": ";;AAEA,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,6BAA6B;CAC7C;;;AAED,AAAA,UAAU,CAAC;EACP,SAAS,EAAE,KAAK;EAChB,MAAM,EAAK,MAAM;CACpB"
+}

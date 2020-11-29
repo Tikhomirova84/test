@@ -1,0 +1,129 @@
+@media screen and (max-width: 1070px) {
+	.header__nav { 
+		display: block;
+	}
+	.header__logo {
+		margin-left: 60px;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.header__menu {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.header__logo {
+		margin-left: 40px;
+	}
+	.header__menu_item {
+		font-size: 15px;
+		margin-right: 30px;
+	}
+	ul {
+		margin-left: 0;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.header__menu {
+		position: fixed;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		top: 0;
+		left: -100%;
+		width: 50%;
+		height: 100vh;
+		padding: 20px 15px;
+		background-color: rgba(0,0,0, .8);
+		transition: 0.6s all; 
+		z-index: 1000;
+		&_active {
+			left: 0;
+		}
+		&_item {
+			margin-left: 0;
+			margin-right: 0 !important;
+			margin: 10px ;
+		}
+	.header__menu_item:first-child {
+		padding: 0 !important;
+		 } 
+	}
+	.hamburger {
+			display: block;
+			position: absolute;
+			right: 10px;
+			top: 30px;
+			transform: translateY(-50%);
+			width: 26px;
+			height: 12px;
+			span {
+				display: block;
+				height: 3px;
+				width: 100%;
+				background-color: #ffffff; 
+				margin-bottom: 5px;
+				transition: 0.5s all;
+			}
+			&_active {
+				span {
+					margin-bottom: -2px; 
+					&:nth-child(1) {
+						transform: translateY(4px) rotate(-45deg);
+					}
+					&:nth-child(2) {
+						display: none;
+					}
+					&:nth-child(3) {
+						transform: translateY(4px) rotate(45deg);	
+					}
+				}
+		    }
+		 }
+	.header__logo {
+		margin-left: 0px;
+	}
+	.subheader {
+		margin-top: 25px;
+   }
+   .brands__logo {
+	   flex-direction: column;
+   }
+   .brands__icon {
+	   margin-top: 10px;
+   }
+}
+
+@media (max-width: 575px) {
+	.header {
+		padding: 0 0 50px 0 !important;
+		height: auto;
+	}
+	.subheader {
+		margin-top: 35px !important;
+	}
+	.header__logo img {
+		width: 200px;
+	 }
+	.header__logo {
+		padding-top: 15px;
+	}
+	.footer {
+		padding-bottom: 20px;
+		height: auto;
+	}
+	.footer__social {
+		flex-direction: column;
+	}
+	.footer__social_link {
+		margin-top: 10px;
+	}
+	.footer__nav {
+		flex-direction: column;
+	}
+}
+
+

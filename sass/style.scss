@@ -1,0 +1,38 @@
+
+body {
+    font-family: 'PT Sans', sans serif;
+    background-color: #E5E5E5;
+}
+
+title {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 1080px;
+    margin   : 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+    justify-content: center;
+}
+
+.col-md-4 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+@import 'blocks/_general';
+@import "blocks/_media";
